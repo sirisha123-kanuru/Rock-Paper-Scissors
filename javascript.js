@@ -62,11 +62,11 @@ let score=JSON.parse(localStorage.getItem('score')) || {
 
             updateResult();
 
-            if(result==='You win!'){
+            if(result==='You win!😊'){
                 score.wins+=1;
-            }else if(result==='You lost'){
+            }else if(result==='You lose😔'){
                 score.losses+=1;
-            }else if(result==='Tie'){
+            }else if(result==='Tie😎'){
                 score.ties+=1;
             }
 
@@ -89,4 +89,5 @@ let score=JSON.parse(localStorage.getItem('score')) || {
             document.querySelector('.js-result')
             .innerHTML=`${result}`;
         }
+
     
